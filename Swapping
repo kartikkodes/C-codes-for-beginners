@@ -1,0 +1,15 @@
+#include<stdio.h>
+main()
+{
+	int a,b,c;
+	printf("Enter the first number\t");
+	scanf("%d",&a);
+	printf("Enter the seconf number");
+	scanf("%d",&b);
+	getch();
+	printf("Values before swapping of a is %d and b is %d\n",a,b);
+	c=a;
+	a=b;
+	b=c;
+	printf("Values after swapping of a is %d and b is %d",a,b);
+}
