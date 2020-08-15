@@ -1,0 +1,26 @@
+#include<stdio.h>
+main()
+{
+	int i,j;
+	float salary,bonus;
+	char gender;
+	printf("Enter your gender : M or F");
+	scanf("%c",&gender);
+	printf("Enter your salary");
+	scanf("%f",&salary);
+	if(gender=='M')
+	{
+		if(salary>10000)
+		bonus=(float)(salary*0.1);
+		else
+		bonus=(float)(salary*0.15);
+           }
+           if(gender=='F')
+           {
+           	if (salary>10000)
+           	bonus=(float)(salary*0.05);
+           	bonus=(float)(salary*0.07);
+	}
+	salary+=bonus;
+	printf("bonus=%.2f\nSalary=%.2f\n",bonus,salary);
+}
