@@ -1,0 +1,24 @@
+lude<stdio.h>
+int main()
+{
+	float gs,bp,hra,pf,da;                   //gs-gross salary bp-basic pay hra-houserentallowance pf-prvidentfund da-dearness allowance
+	printf("Enter your Basic Pay\n");
+	scanf("%f",&bp);
+	
+	hra=0.4*bp;
+	pf=0.6*bp;
+	da=0.12*bp;
+	gs=bp+hra+da+pf;
+	
+	printf("Gross Salary is %.2f\n",gs);
+}
+
+
+
+
+
+
+
+
+
+
