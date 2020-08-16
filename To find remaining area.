@@ -1,0 +1,26 @@
+#include<stdio.h>
+#include<math.h>
+#define PI 3.14
+main()
+{
+	float r,aoc,b,p,aot,leftarea;                              //r=radius aoc=area of circle
+	printf("Enter the radius of circle\n");
+	scanf("%f",&r);
+	aoc=PI * r * r;
+	printf("Area of the Circle = %.2f\n",aoc);
+                                                             //aot=area of triangle , b=base , p=perpendicular,
+	printf("Enter the base length of the Triangle\n");
+	scanf("%f",&b);
+	printf("Enter the length of perpendicular\n");
+	scanf("%f",&p);
+
+	aot=(b*p)/2;
+
+	printf("The area of triangle is %.2f\n",aot); 
+
+	printf("Now we have area of circle %.2f and area of triangle %.2f\n",aoc,aot);
+
+	leftarea=aoc-aot;
+
+	printf("The area left is %.2f",leftarea);
+}
