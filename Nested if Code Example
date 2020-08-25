@@ -1,0 +1,40 @@
+#include<stdio.h>
+void main()
+{
+	int p,c,m;
+	printf("Enter the marks in three subject\n");
+	scanf("%d %d %d",&p,&c,&m);
+	
+	if(p>=50)
+	{
+		if(c>=55)
+		{
+			if(m>=60)
+			{
+				if(p+c+m>=220)
+				{
+					printf("You are eligible");
+				}
+				else if(p+m>=130)
+				{
+					
+					
+				printf("You are eligible");
+				}	
+			}
+			else
+			{
+				printf("Admission not given");
+			}
+			
+		}
+		else
+			{
+				printf("Admission not given");
+			}
+	}
+	else
+			{
+				printf("Admission not given");
+			}
+}
