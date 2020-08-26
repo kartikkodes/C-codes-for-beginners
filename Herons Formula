@@ -1,0 +1,18 @@
+#include<stdio.h>
+#include<math.h>
+main()
+{
+    int s,a,b,c,d,a1,b1,c1;
+    float aot;
+    printf("Enter the length of the three sides of the triangle\n");
+    scanf("%d %d %d",&a,&b,&c);
+
+    s=(a+b+c)/2;
+
+    a1=s-a;
+    b1=s-b;
+    c1=s-c;
+
+    aot=sqrt(s*a1*b1*c1);
+    printf("The area of the triangle is %f",aot);
+}
