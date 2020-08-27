@@ -1,0 +1,37 @@
+#include<stdio.h>
+#include<math.h>
+main()
+{
+    int a,b;
+    int choice;
+
+    printf("enter the 2 integer\n");
+    scanf("%d %d",&a,&b);
+
+    printf("Select an operator\n");
+    printf("1.ADD\n2.Subtract\n3.Mult\n4.Division\n");
+    printf("Enter your choice\n");
+    scanf("%d",&choice);
+
+    switch(choice)
+    {
+        case 1: 
+        printf("sm is %d",a+b);
+        break;
+
+        case 2:
+        printf("diff is %d",a-b);
+        break;
+
+        case 3:
+        printf("product is %d",a*b);
+        break;
+
+        case 4:
+        printf("Div is %f",(float)a/b);
+        break;
+
+        default:
+        printf("Wrong Input");
+    }
+}
