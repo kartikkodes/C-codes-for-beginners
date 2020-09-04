@@ -1,0 +1,23 @@
+float average();
+void main()
+{
+	float d;
+    	d=average();
+    	printf("Avg is %.2f",d);
+    	getch();
+}
+float average()
+{
+    int count=0,a,i,sum=0;
+    float x;
+    for(i=1;a!=0;i++)
+    {
+
+        	printf("enter the numbers");
+        	scanf("%d",&a);
+        	sum=sum+a;
+        	count++;
+    }
+	return((float)sum/(count-1));
+
+}
