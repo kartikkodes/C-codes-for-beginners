@@ -1,0 +1,27 @@
+void showtable(int,int);
+
+void main()
+{
+	int a,b;
+	
+	printf("Enter the two numbers\n");
+	scanf(" %d %d",&a,&b);
+	showtable(a,b);
+	getch();
+}
+
+
+void showtable(int a,int b)
+{
+	int i;
+	if(b<=0)
+	{
+		printf("Cannot process further");
+		return;
+	}
+	printf("Table of %d is",a);
+	for(i=1;i<=b;i++)
+	{
+		printf("\n%d*%d=%d",a,i,a*i);
+	}
+}
