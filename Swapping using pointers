@@ -1,0 +1,18 @@
+void swap(int *,int *);                           // this code is call by reference
+
+void main()
+{
+	int a=4,b=5;
+	swap(&a,&b);                          //actual arguements
+	printf("a is %d and b is %d",a,b);
+}
+
+ void swap(int *p,int *q)                     //formal arguements or parameters  
+{
+	int x;
+	//int *o
+	x=*p;        // *o=*p;
+	*p=*q;	 // *p=*q;
+	*q=x;	//  *q=*o;     You can use pointer too but this will increase memory usage. 
+	
+}
