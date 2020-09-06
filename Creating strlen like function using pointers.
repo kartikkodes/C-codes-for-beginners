@@ -1,0 +1,18 @@
+int lenstr(char *p);
+void main()
+{
+	char arr[5];
+	int x;
+		printf("Enter a number");
+		scanf(" %s",arr);
+	x=lenstr(arr);
+	printf("%d",x);
+	
+}
+
+int lenstr(char *p)    
+{
+	int i;
+	for(i=0;*(p+i)!='\0';i++);
+	return(i);
+}
