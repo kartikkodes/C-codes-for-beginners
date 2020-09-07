@@ -1,0 +1,17 @@
+#include<stdio.h>
+#include<string.h>
+main()
+{
+	char s[50];
+	int i,count=1;
+	printf("Enter the string\n");
+	gets(s);
+	for(i=0;i<strlen(s);i++)
+	{
+		if(s[i]==' ')
+		{
+		count++;
+	           }
+	}
+	printf(" %d words are there in the string",count);
+}
