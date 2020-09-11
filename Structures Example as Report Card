@@ -1,0 +1,39 @@
+#include<string.h>
+#include<stdio.h>
+struct students
+{
+	int roll;
+	int p,c,m;
+	float pr;
+	char result[20];
+};
+void main()
+{
+	struct students S[3];
+	int i;
+	for(i=0;i<3;i++)
+	{
+		printf("Enter roll number , p,c,m");
+		scanf("%d %d %d %d",&S[i].roll,&S[i].p,&S[i].c,&S[i].m);
+	}
+	for(i=0;i<3;i++)
+	{
+		S[i].pr=(float)(S[i].p + S[i].c + S[i].m)/3;
+	 	if(S[i].pr>=75)
+	 	{
+	 		strcpy(S[i].result,"Distinction");
+		 }
+		 else if(S[i].pr>=60)
+		 {
+		 	strcpy(S[i].result,"First Division");
+		 }
+		 else 
+		 {
+		 	strcpy(S[i].result,"Fail");
+		 }
+	}
+	for(i=0;i<3;i++)
+	{
+		printf("\nRoll=%d \nPercentage=%f \nResult=%s",S[i].roll,S[i].pr,S[i].result);
+	}
+}
