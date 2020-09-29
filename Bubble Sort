@@ -1,0 +1,27 @@
+#include<stdio.h>
+#include<string.h>
+
+void main()
+{
+	int arr[]={96,4,74,87,12,101,347,411,555};
+	int i,j,temp;
+	
+	
+	for(i=0;i<=8;i++)
+  	{
+  		for(j=0;j<7;j++)
+  		{
+		  
+  		if(arr[j]>arr[j+1])
+		  {
+		  	temp=arr[j];
+			arr[j]=arr[j+1];
+			arr[j+1]=temp;  	
+		  }
+		}
+	}
+	for(i=0;i<=8;i++)
+	{
+		printf(" %d",arr[i]);
+	}
+}
