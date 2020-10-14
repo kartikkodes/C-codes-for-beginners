@@ -1,0 +1,24 @@
+#include<stdio.h>
+
+int main(){
+    int i=8;
+
+    int *j;    //Pointer
+    j=&i;
+
+    int **k;    //Pointer to a pointer
+    k=&j;
+    
+
+    //Checks
+
+    printf("Add of i is %u\n",j);
+    printf("Value of i is %d\n",*j);
+    printf("**Add of j is %u\n",&j);
+    printf("***Value of j is %d\n",j);
+    printf("Add of i is %u\n",&i);
+    printf("Add of k is %u\n",&k);
+    printf("***Value of j is %d",*k);
+    printf("Value of i is %d",**k);
+    return 0;
+}
